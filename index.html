@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>4 To Win!</title>
 </head>
 <body>
+    <!-- Header Section -->
     <header class="heading">
         <h1>4 To Win!</h1>
     </header>
 
     <section>
         <div class="player-area">
-            <!-- Form for player selection only -->
+            <!-- Section with form for player selection only -->
             <form action="#">
                 <p id="playerID">Choose player: </p>
             <input type="radio" name="player" id="player1" value="player1"> Player 1</input>
@@ -23,8 +25,9 @@
         </div>
     </section>
 
+    <!-- Game Area Section -->
     <section>
-    <div class="game-area"></div>
+    <div class="game-area">
         <div class="cell row-0 col-0"></div>
         <div class="cell row-0 col-1"></div>
         <div class="cell row-0 col-2"></div>
@@ -81,11 +84,18 @@
         <div class="cell row-6 col-5"></div>
         <div class="cell row-6 col-6">
         </div>
-        <button class="reset">Reset Game</button>
+        <div>
+            <button class="reset">Reset Game</button>
+        </div>
+    </div>
     </section>
+
+    <!-- Footer Section -->
     <footer>
         <p>GregcoTech WebDev &copy; 2021 - Game for Educational & Entertainment Purposes</p>
     </footer>
+
+    <!-- JavaScript Link -->
     <script src="assets/js/app.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@ Body {
     background: rgb(0, 113, 128);
     display: flex;
     flex-direction: column;
-    font-family: sans-serif;
+    font-family: Poppins, sans-serif;
     padding: 25px;
     width: 100%;
 }
@@ -19,6 +19,40 @@ Body {
     font-size: 2rem;
 }
 
+/* Player Area */
+.player-area {
+    font-size: 1.25rem;
+    margin: auto;
+}
 
+.game-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 700px;
+    margin:10px 0 25px;
+    width: 700px;
+  }
+  
+  .cell {
+    align-items: center;
+    background: green;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 100px;
+  }
+  
+  .cell::after {
+    background: white;
+    border-radius: 50%;
+    border: 3px solid black;
+    content: '';
+    cursor: pointer;
+    height: 75px;
+    width: 75px;
+  }
 
-
+  .reset {
+    font-size: 1.25rem;
+  }
